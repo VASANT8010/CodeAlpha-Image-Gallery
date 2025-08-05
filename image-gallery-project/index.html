@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>image gallery</title>
+</head>
+<body>
+     <h1 class="title">My Image Gallery</h1>
+       
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="filterImages('Travles')">Travles</button>
+  </div>
+
+  <div class="gallery">
+    <img src="images/nature-1.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+    <img src="images/animals-1.jpg" class="gallery-item animals" onclick="openLightbox(this)">
+    <img src="images/travles-3.JPG" class="gallery-item Travles" onclick="openLightbox(this)">
+    <img src="images/nature-2.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="images/travles-2.JPG" class="gallery-item Travles" onclick="openLightbox(this)">
+    <img src="images/animals-2.jpg" class="gallery-item animals" onclick="openLightbox(this)">
+     <img src="images/nature-3.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+      <img src="images/travles-1.JPG" class="gallery-item Travles" onclick="openLightbox(this)">
+      <img src="images/animals-3.jpg" class="gallery-item animals" onclick="openLightbox(this)">
+<img src="images/nature-4.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+
+  </div>
+
+  <!-- Lightbox View -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <div class="nav">
+      <span class="prev" onclick="changeImage(-1)">❮ Prev</span>
+      <span class="next" onclick="changeImage(1)">Next ❯</span>
+    </div>
+  </div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
